@@ -10,6 +10,8 @@ export class AppComponent {
 
   adicionado = false;
   nome = '';
+  funcionarios = [];
+  ultimoId=0;
   
   public getIdade() {
     return 10;
@@ -20,7 +22,10 @@ export class AppComponent {
   }
 
   public setNome(nomeInput: any) {
-    this.nome = nomeInput + `${'teste'}`;
+    this.nome = nomeInput;
     this.adicionado = true;
+    this.funcionarios.push({
+      id: ++this.ultimoId,
+      nome: this.nome});
   }
 }

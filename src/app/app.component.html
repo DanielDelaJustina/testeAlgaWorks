@@ -11,10 +11,16 @@
   <button type="button" class="btn btn-primary" (click)="setNome(formTest.value)"
     [disabled]="nome.length == 0">Adicionar</button>
 
-    <div class="card">
-        <img src="https://randomuser.me/api/portraits/men/1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            João
-        </div>
+  <div class="row" style="margin-top: 20px">
+
+    <div class="col-md-2" *ngFor="let funcionario of funcionarios">
+      <div class="card">
+          <img src="https://randomuser.me/api/portraits/men/{{funcionario.id}}.jpg" class="card-img-top" >
+          <div class="card-body">
+              {{funcionario.nome}}
+          </div>
+      </div>
     </div>
+
+  </div>
 </div>
