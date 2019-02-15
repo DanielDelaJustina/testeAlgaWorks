@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FuncionarioCardComponent
   ],
   imports: [
     FormsModule,
