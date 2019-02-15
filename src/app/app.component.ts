@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TesteAlgaWorks';
+
+  adicionado = false;
+  nome = '';
+  
+  public getIdade() {
+    return 10;
+  }
+
+  public getNome() {
+    return this.nome;
+  }
+
+  public setNome(nomeInput: any) {
+    this.nome = nomeInput + `${'teste'}`;
+    this.adicionado = true;
+  }
 }
