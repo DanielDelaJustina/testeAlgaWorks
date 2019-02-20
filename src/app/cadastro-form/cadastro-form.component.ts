@@ -15,7 +15,7 @@ class Cliente {
 })
 export class CadastroFormComponent {
 
-    minLength: number = 3;
+    minLength: 3;
     cliente = new Cliente();
     profissoes = ['Programador', 'Empresário', 'Outra'];
 
